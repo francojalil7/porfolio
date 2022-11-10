@@ -4,6 +4,9 @@ import "../App.css";
 const Home = () => {
   return (
     <>
+      <Box>
+        chua
+      </Box>
       <div className="background">
         <span></span>
         <span></span>
@@ -11,9 +14,20 @@ const Home = () => {
         <span></span>
         <span></span>
         <span></span>
-        <Box h="1000" >
-          holi
-        </Box>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </>
   );

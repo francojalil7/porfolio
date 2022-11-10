@@ -20,5 +20,4 @@ export const myNewTheme = extendTheme({
     heading: `'Heebo', sans-serif`,
     body: `'Open Sans', sans-serif`,
   },
-
 });
