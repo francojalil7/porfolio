@@ -11,8 +11,10 @@ const Home = () => {
         <span></span>
         <span></span>
         <span></span>
+        <Box h="1000" >
+          holi
+        </Box>
       </div>
-      <Box h="100px"></Box>
     </>
   );
 };

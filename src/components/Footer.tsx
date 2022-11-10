@@ -2,7 +2,7 @@ import { Heading, Stack } from "@chakra-ui/react";
 
 const Footer = () => {
   return (
-    <Stack>
+    <Stack bg="blue">
       <Heading>footeer</Heading>
     </Stack>
   );
