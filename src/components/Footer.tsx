@@ -1,13 +1,17 @@
 import { Box, Image, Stack, Text } from "@chakra-ui/react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-const iconos = [
-  "https://cdn.icon-icons.com/icons2/3186/PNG/512/whatsapp_icon_194157.png",
-  "https://cdn-icons-png.flaticon.com/512/61/61109.png?w=360",
-  "https://cdn-icons-png.flaticon.com/512/25/25231.png",
-];
 const Footer = () => {
   return (
-    <Box border={"2px"} borderColor={"white"} m="1rem" maxW={"1200px"} my="0" mx="auto">
+    <Box
+      border={"2px"}
+      borderColor={"white"}
+      m="1rem"
+      maxW={"1200px"}
+      my="0"
+      mx="auto"
+    >
       <Stack
         direction="row"
         justifyContent={"center"}
@@ -15,19 +19,13 @@ const Footer = () => {
         p="15px"
         m="5px"
       >
-        {iconos.map((icono) => {
-          return (
-            <div key={icono}>
-              <Image
-                boxSize="35px"
-                bg="white"
-                borderRadius={"50%"}
-                src={icono}
-                alt="icono"
-              />
-            </div>
-          );
-        })}
+        <a href="https://github.com/francojalil7" target={"_blank"}>
+          <FaGithub size={"35px"} />
+        </a>
+
+        <a href="https://www.linkedin.com/in/francojalil/" target={"_blank"}>
+          <FaLinkedin size={"35px"} />
+        </a>
       </Stack>
       <Stack alignItems={"center"}>
         <Text color="white" m="1rem">
