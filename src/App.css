@@ -1,6 +1,6 @@
 @keyframes move {
   100% {
-      transform: translate3d(0, 0, 1px) rotate(360deg);
+    transform: translate3d(0, 0, 1px) rotate(360deg);
   }
 }
 
@@ -26,7 +26,6 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-
 
 .background span:nth-child(0) {
   color: #b4f0a3;
@@ -207,4 +206,13 @@
   animation-delay: -3s;
   transform-origin: 23vw 10vh;
   box-shadow: -4vmin 0 1.3618162413719392vmin currentColor;
+}
+
+.skill {
+  max-width: 7rem;
+  margin: 3px;
+  pointer-events: none;
+}
+.slider{
+  cursor: grab;
 }

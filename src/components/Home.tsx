@@ -4,9 +4,7 @@ import "../App.css";
 const Home = () => {
   return (
     <>
-      <Box>
-        chua
-      </Box>
+      <Box h="50vh"></Box>
       <div className="background">
         <span></span>
         <span></span>

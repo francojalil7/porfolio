@@ -6,4 +6,6 @@
 }
 .nav{
     border-radius: 0% 20% 20% 0%;
+    z-index: 20;
+    position: absolute;
 }

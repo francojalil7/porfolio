@@ -2,7 +2,6 @@ import { Box, Heading, chakra } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { motion, isValidMotionProp } from "framer-motion";
 import "./styles.css";
-import { FaMap } from "react-icons/fa";
 import { ImCross, ImMenu } from "react-icons/im";
 
 const NavBar = () => {
@@ -13,7 +12,7 @@ const NavBar = () => {
   });
 
   return (
-    <Box bg="red" my="0" mx="auto" maxW={"1300px"} h="8vh">
+    <Box my="0" mx="auto" maxW={"1300px"} h="8vh" >
       <button
         className="button"
         onClick={() => {
@@ -28,7 +27,7 @@ const NavBar = () => {
       </button>
       {isOpen && (
         <ChakraBox
-        className="nav"
+          className="nav"
           initial={{ x: -100, opacity: 0 }}
           animate={{
             x: 0,
@@ -39,14 +38,16 @@ const NavBar = () => {
             duration: 0.2,
           }}
           padding="2"
-          bgGradient="linear(to-t, #009428, black)"
+          bgGradient="linear(to-r, #095e1f, black)"
           display="flex"
           justifyContent="center"
           alignItems="center"
           width="30vh"
           height="30vh"
+          color="white"
+          zIndex={8}
         >
-          I'm Dizzy!
+          Porfolio
         </ChakraBox>
       )}
     </Box>
