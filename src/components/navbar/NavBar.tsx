@@ -1,4 +1,4 @@
-import { Box, Heading, chakra } from "@chakra-ui/react";
+import { Box, chakra, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { motion, isValidMotionProp } from "framer-motion";
 import "./styles.css";
@@ -12,7 +12,7 @@ const NavBar = () => {
   });
 
   return (
-    <Box my="0" mx="auto" maxW={"1300px"} h="8vh" >
+    <Box my="0" mx="auto" maxW={"1200px"} h="8vh" id="home" position={"sticky"}>
       <button
         className="button"
         onClick={() => {
@@ -26,29 +26,31 @@ const NavBar = () => {
         {isOpen ? <ImCross /> : <ImMenu />}
       </button>
       {isOpen && (
-        <ChakraBox
+        <motion.div
           className="nav"
           initial={{ x: -100, opacity: 0 }}
           animate={{
             x: 0,
             opacity: 1,
           }}
-          // @ts-ignore no problem in operation, although type error appears.
           transition={{
-            duration: 0.2,
+            duration: "0.3",
           }}
-          padding="2"
-          bgGradient="linear(to-r, #095e1f, black)"
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-          width="30vh"
-          height="30vh"
-          color="white"
-          zIndex={8}
         >
-          Porfolio
-        </ChakraBox>
+          <a href="#home">
+            <p>HOME</p>
+          </a>
+          <a href="#skills">HABILIDADES</a>
+          <a href="#about_me">
+            <p> SOBRE MÍ</p>
+          </a>
+          <a href="#proyects">
+            <p> PROYECTOS</p>
+          </a>
+          <a href="#contact">
+            <p> CONTACTOS</p>
+          </a>
+        </motion.div>
       )}
     </Box>
   );

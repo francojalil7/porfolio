@@ -2,16 +2,18 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Header from "./components/header/Texto";
 import NavBar from "./components/navbar/NavBar";
-import { Text } from "@chakra-ui/react";
 import Slider from "./components/Slider";
+import AboutMe from "./components/AboutMe";
 
 function App() {
   return (
     <>
       <NavBar />
+      <AboutMe />
+      <Header />
       <Slider />
       <Home />
-      <Header />
+      
 
       <Footer />
     </>

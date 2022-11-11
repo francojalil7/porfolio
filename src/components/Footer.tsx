@@ -10,6 +10,7 @@ const Footer = () => {
       maxW={"1200px"}
       my="0"
       mx="auto"
+      className="footer"
     >
       <Stack
         direction="row"

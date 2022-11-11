@@ -9,6 +9,7 @@ const Slider = () => {
 
   return (
     <Box
+    id="skills"
       m="0 auto"
       overflowX="hidden"
       maxWidth={"1050px"}
@@ -29,7 +30,7 @@ const Slider = () => {
       </Text>
 
       <Text color="white" m="1rem" fontSize="1.5rem">
-        Cuando trabajo con React me gusta utilizar TypeScript.
+        Actualmente cuando trabajo con React me gusta utilizar TypeScript.
       </Text>
       <MotionBox
         display="flex"

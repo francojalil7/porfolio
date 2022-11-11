@@ -213,6 +213,9 @@
   margin: 3px;
   pointer-events: none;
 }
-.slider{
+.slider {
   cursor: grab;
+}
+.footer {
+  backdrop-filter: blur(3px);
 }
