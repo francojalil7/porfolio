@@ -1,15 +1,11 @@
-import { Box, chakra, Text } from "@chakra-ui/react";
-import React, { useState } from "react";
-import { motion, isValidMotionProp } from "framer-motion";
+import { Box } from "@chakra-ui/react";
+import { useState } from "react";
+import { motion } from "framer-motion";
 import "./styles.css";
 import { ImCross, ImMenu } from "react-icons/im";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-
-  const ChakraBox = chakra(motion.div, {
-    shouldForwardProp: isValidMotionProp,
-  });
 
   return (
     <Box my="0" mx="auto" maxW={"1200px"} h="8vh" id="home" position={"sticky"}>

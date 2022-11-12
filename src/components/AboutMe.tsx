@@ -18,7 +18,7 @@ const AboutMe = () => {
           m="1rem"
           fontWeight="extrabold"
         >
-          Sobre mí
+          Sobre mí.
         </Text>
         <Text color="white" m="1.3rem" fontSize="1.5rem">
           Hola! Soy Franco, FullStack Developer actualmente orientado al

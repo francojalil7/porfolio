@@ -23,7 +23,7 @@ const Slider = () => {
         m="1rem"
         fontWeight="extrabold"
       >
-        Habilidades
+        Habilidades.
       </Text>
       <Text color="white" m="1rem" fontSize="1.5rem">
         En el 2021 comencé a estudiar tecnologías del Frontend. Comencé con HTML5, CSS3 Y JavaScript.
