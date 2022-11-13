@@ -28,13 +28,13 @@ const Proyect = () => {
         </Stack>
         <Stack direction={"row"} m="0 auto">
           <a href="https://broken-office.netlify.app/" target={"_blank"}>
-            <Button>Ver Proyecto</Button>
+            <Button >Ver Proyecto</Button>
           </a>
           <a
             href="https://github.com/milagrosdoldan/Broken-Office"
             target={"_blank"}
           >
-            <FaGithub size={"35px"} />
+            <FaGithub color="white" size={"35px"} />
           </a>
         </Stack>
       </Stack>

@@ -24,7 +24,7 @@ const Footer = () => {
         </a>
 
         <a href="https://www.linkedin.com/in/francojalil/" target={"_blank"}>
-          <FaLinkedin  size={"35px"} />
+          <FaLinkedin  color="white" size={"35px"} />
         </a>
       </Stack>
       <Stack alignItems={"center"}>

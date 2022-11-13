@@ -46,11 +46,11 @@ const AboutMe = () => {
           </Button></a>
           
           <a href="https://www.linkedin.com/in/francojalil/" target={"_blank"}>
-            <FaLinkedin size="30px" />
+            <FaLinkedin color="white" size="30px" />
           </a>
 
           <a href="https://github.com/francojalil7" target={"_blank"}>
-            <FaGithub size="30px" />
+            <FaGithub color="white" size="30px" />
           </a>
         </Stack>
       </Stack>
