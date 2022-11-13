@@ -1,6 +1,8 @@
-import { Button, Image, Stack, Text } from "@chakra-ui/react";
+import { Button, chakra, Image, Stack, Text } from "@chakra-ui/react";
+import { isValidMotionProp, motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
-import projects from "../utils/projects"
+import projects from "../utils/projects";
+
 interface Props {
   name: string;
   description: string;
@@ -8,10 +10,26 @@ interface Props {
   stack: string;
 }
 
+const ChakraBox = chakra(motion.div, {
+  shouldForwardProp: isValidMotionProp,
+});
+
 const Proyect = () => {
   return (
-    <Stack>
+    <motion.div
+    
+    className="animate__backInRight"
+      initial={{ x: -100, opacity: 0 }}
+      animate={{
+        x: 0,
+        opacity: 1,
+      }}
+      transition={{
+        duration: "1",
+      }}
+    >
       <Image src={"../assets/broken-office.jpeg"} />
+
       <Stack>
         <Stack w="50%" m="1rem">
           <Text color="white" fontSize={"2rem"} m="0 auto">
@@ -28,7 +46,7 @@ const Proyect = () => {
         </Stack>
         <Stack direction={"row"} m="0 auto">
           <a href="https://broken-office.netlify.app/" target={"_blank"}>
-            <Button >Ver Proyecto</Button>
+            <Button>Ver Proyecto</Button>
           </a>
           <a
             href="https://github.com/milagrosdoldan/Broken-Office"
@@ -38,7 +56,7 @@ const Proyect = () => {
           </a>
         </Stack>
       </Stack>
-    </Stack>
+    </motion.div>
   );
 };
 

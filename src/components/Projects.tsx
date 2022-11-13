@@ -1,5 +1,6 @@
 import { Stack, Text } from "@chakra-ui/react";
 import Proyect from "../commons/Project";
+import { motion, useScroll } from "framer-motion";
 
 const Proyects = () => {
   return (
@@ -13,6 +14,7 @@ const Proyects = () => {
       >
         Mis Proyectos.
       </Text>
+
       <Text color="white" m="1.3rem" fontSize="1.5rem">
         En esta sección encontrarás todos los proyectos en los que trabajé.
       </Text>

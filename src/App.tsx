@@ -5,16 +5,17 @@ import NavBar from "./components/navbar/NavBar";
 import Slider from "./components/Slider";
 import AboutMe from "./components/AboutMe";
 import Proyects from "./components/Projects";
+import "animate.css";
 
 function App() {
   return (
     <>
       <NavBar />
       <AboutMe />
-      <Header /> 
+      <Home />
+      <Header />
       <Proyects />
       <Slider />
-      <Home />
       <Footer />
     </>
   );
