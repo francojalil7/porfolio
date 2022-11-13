@@ -1,8 +1,14 @@
 import { Button, Image, Stack, Text } from "@chakra-ui/react";
 import { FaGithub } from "react-icons/fa";
-import { Proyect } from "../interfaces/proyects";
+import projects from "../utils/projects"
+interface Props {
+  name: string;
+  description: string;
+  img: string;
+  stack: string;
+}
 
-const Proyect = ({ name, description, img, stack }: Proyect) => {
+const Proyect = () => {
   return (
     <Stack>
       <Image src={"../assets/broken-office.jpeg"} />

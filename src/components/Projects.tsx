@@ -1,5 +1,5 @@
 import { Stack, Text } from "@chakra-ui/react";
-import Proyect from "../commons/Proyect";
+import Proyect from "../commons/Project";
 
 const Proyects = () => {
   return (
@@ -11,12 +11,12 @@ const Proyects = () => {
         m="1rem"
         fontWeight="extrabold"
       >
-        Mis Proyectos
+        Mis Proyectos.
       </Text>
       <Text color="white" m="1.3rem" fontSize="1.5rem">
         En esta sección encontrarás todos los proyectos en los que trabajé.
       </Text>
-      <Proyect/>
+      <Proyect />
     </Stack>
   );
 };

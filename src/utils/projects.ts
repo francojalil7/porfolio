@@ -1,7 +1,6 @@
 import broken from "../assets/broken-office.jpeg";
-import { Proyect } from "../interfaces/proyects";
-
-export const proyects = [
+import { Proyect } from "../interfaces/projects";
+const projects = [
   {
     name: "Broken-Office for Globant",
     description:
@@ -10,3 +9,6 @@ export const proyects = [
     stack: "React | Redux | Express | MongoDB | Mongoose | Vision IA",
   },
 ];
+
+
+export default projects;

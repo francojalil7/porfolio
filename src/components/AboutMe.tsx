@@ -1,4 +1,5 @@
-import { Box, Stack, Text } from "@chakra-ui/react";
+import { Box, Button, Stack, Text } from "@chakra-ui/react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const AboutMe = () => {
   return (
@@ -20,7 +21,7 @@ const AboutMe = () => {
         >
           Sobre mí.
         </Text>
-        <Text color="white" m="1.3rem" fontSize="1.5rem">
+        <Text color="white" m="1.3rem" fontSize="1.6rem">
           Hola! Soy Franco, FullStack Developer actualmente orientado al
           Frontend.
         </Text>
@@ -34,6 +35,24 @@ const AboutMe = () => {
           Coding Bootcamp de más de 800hs donde me formé tanto en la parte
           técnica así también como mis habilidades blandas.
         </Text>
+        <Stack
+          direction={"row"}
+          m="1rem"
+          justifyContent={"center"}
+          alignItems="center"
+        >
+          <a href="https://drive.google.com/file/d/1I80vpy7QR3BA3ab6GdB9-FQzunfwibBV/view?usp=sharing" target={"_blank"}><Button borderRadius={"20px"} m="0">
+            Descargar CV
+          </Button></a>
+          
+          <a href="https://www.linkedin.com/in/francojalil/" target={"_blank"}>
+            <FaLinkedin size="30px" />
+          </a>
+
+          <a href="https://github.com/francojalil7" target={"_blank"}>
+            <FaGithub size="30px" />
+          </a>
+        </Stack>
       </Stack>
     </Box>
   );
