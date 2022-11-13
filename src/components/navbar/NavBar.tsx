@@ -19,7 +19,7 @@ const NavBar = () => {
           }
         }}
       >
-        {isOpen ? <ImCross /> : <ImMenu />}
+        {isOpen ? <ImCross color="black"/> : <ImMenu color="black"/>}
       </button>
       {isOpen && (
         <motion.div

@@ -2,7 +2,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import myTheme from "./myTheme";
+import myNewTheme from "./myTheme";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(
@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <ChakraProvider theme={myTheme}>
+    <ChakraProvider theme={myNewTheme}>
       <App />
     </ChakraProvider>
   </React.StrictMode>

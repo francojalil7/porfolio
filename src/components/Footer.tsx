@@ -20,11 +20,11 @@ const Footer = () => {
         m="5px"
       >
         <a href="https://github.com/francojalil7" target={"_blank"}>
-          <FaGithub size={"35px"} />
+          <FaGithub color="white" size={"35px"} />
         </a>
 
         <a href="https://www.linkedin.com/in/francojalil/" target={"_blank"}>
-          <FaLinkedin size={"35px"} />
+          <FaLinkedin  size={"35px"} />
         </a>
       </Stack>
       <Stack alignItems={"center"}>
