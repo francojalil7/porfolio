@@ -1,19 +1,24 @@
 import { Box, Text } from "@chakra-ui/react";
-
 import "../App.css";
 import Slider from "../commons/Slider";
 
 const Skills = () => {
   return (
     <>
-      <Box id="skills" m="0 auto" maxWidth={"1050px"} h="auto">
+      <Box
+        id="skills"
+        m="0 auto"
+        maxWidth={"1050px"}
+        h="auto"
+        marginBottom={"2rem"}
+      >
         <Text
           bgGradient="linear(to-tr, teal.300, yellow.400)"
           bgClip="text"
           fontSize="3rem"
           m="1rem"
           fontWeight="extrabold"
-          marginBottom={"2rem"}
+          marginBottom={"5rem"}
         >
           Habilidades.
         </Text>
@@ -22,8 +27,8 @@ const Skills = () => {
           HTML5, CSS3 Y JavaScript. <br />
           Actualmente cuando trabajo con React me gusta utilizar TypeScript.
         </Text>
-        <Slider/>
       </Box>
+      <Slider />
     </>
   );
 };
