@@ -40,13 +40,12 @@ const Project = ({ project }: Prop) => {
             {project.stack}
           </Text>
           <Stack direction={"row"} m="0 auto">
-            <a href="https://broken-office.netlify.app/" target={"_blank"}>
-              <Button>Ver Proyecto</Button>
-            </a>
-            <a
-              href="https://github.com/milagrosdoldan/Broken-Office"
-              target={"_blank"}
-            >
+            {project.deploy && (
+              <a href={project.deploy} target={project.deploy}>
+                <Button>Ver Proyecto</Button>
+              </a>
+            )}
+            <a href={project.github} target={"_blank"}>
               <FaGithub color="white" size={"35px"} />
             </a>
           </Stack>
