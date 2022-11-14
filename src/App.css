@@ -228,3 +228,6 @@
 .footer {
   backdrop-filter: blur(3px);
 }
+p {
+  color: white;
+}

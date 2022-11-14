@@ -23,15 +23,15 @@ interface skill {
 }
 const skills: skill[] = [
   { name: "TypeScript", skill: typescript },
-  { name: "JavaScript", skill: javascript },
   { name: "React", skill: react },
   { name: "Redux", skill: redux },
-  { name: "Npm", skill: npm },
   { name: "Mongo", skill: mongo },
-  { name: "Git", skill: git },
   { name: "SASS", skill: sass },
   { name: "PostgreSQL", skill: postgres },
   { name: "Sequelize", skill: sequelize },
+  { name: "JavaScript", skill: javascript },
+  { name: "Git", skill: git },
+  { name: "Npm", skill: npm },
   { name: "Tailwind", skill: tailwind },
   { name: "Vite", skill: vite },
   { name: "WebPack", skill: webpack },
