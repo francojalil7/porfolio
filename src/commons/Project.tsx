@@ -22,7 +22,7 @@ const Project = ({ project }: Prop) => {
       }}
     >
       <Stack m="1rem" direction={{ base: "column-reverse", xl: "row" }}>
-        <Box bg="red" w={{ base: "100%", xl: "50%" }}>
+        <Box bg="green" w={{ base: "100%", xl: "50%" }}>
           Imagen Proyecto
         </Box>
         <Stack
