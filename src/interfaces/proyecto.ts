@@ -3,4 +3,6 @@ export interface Proyecto {
   description: string;
   img: string;
   stack: string;
+  github?:string;
+  deploy?:string;
 }
