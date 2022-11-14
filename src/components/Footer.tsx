@@ -6,10 +6,9 @@ const Footer = () => {
     <Box
       border={"2px"}
       borderColor={"white"}
-      m="1rem"
-      maxW={"1200px"}
-      my="0"
-      mx="auto"
+      m="2rem"
+      maxW={"950px"}
+      w="90%"
       className="footer"
     >
       <Stack

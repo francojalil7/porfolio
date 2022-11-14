@@ -1,10 +1,9 @@
 import { Stack, Text } from "@chakra-ui/react";
 import Proyect from "../commons/Project";
-import { motion, useScroll } from "framer-motion";
 
 const Proyects = () => {
   return (
-    <Stack maxWidth={"1050px"} m="0 auto" p="1rem">
+    <Stack maxWidth={"1050px"} m="0 auto">
       <Text
         bgGradient="linear(to-tr, teal.300, yellow.400)"
         bgClip="text"
@@ -15,7 +14,7 @@ const Proyects = () => {
         Mis Proyectos.
       </Text>
 
-      <Text color="white" m="1.3rem" fontSize="1.5rem">
+      <Text color="white" paddingLeft="1rem" fontSize="1.5rem">
         En esta sección encontrarás todos los proyectos en los que trabajé.
       </Text>
       <Proyect />
