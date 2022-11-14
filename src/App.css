@@ -209,13 +209,22 @@
 }
 
 .skill {
-  max-width: 7rem;
-  margin: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
   pointer-events: none;
+  margin: 5px;
+}
+
+.skillImg {
+  min-width: 4rem;
+  max-width: 4rem;
 }
 .slider {
   cursor: grab;
 }
+
 .footer {
   backdrop-filter: blur(3px);
 }

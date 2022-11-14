@@ -6,17 +6,22 @@ import Slider from "./components/Slider";
 import AboutMe from "./components/AboutMe";
 import Proyects from "./components/Projects";
 import "animate.css";
+import { Stack } from "@chakra-ui/react";
+import Contact from "./components/Contact";
 
 function App() {
   return (
     <>
       <NavBar />
-      <AboutMe />
+      <Stack maxWidth={"1200p"} m="0 auto" alignItems={"center"} overflow="hidden">
+        <AboutMe />
+        <Header />
+        <Proyects />
+        <Slider />
+        <Contact/>
+        <Footer />
+      </Stack>
       <Home />
-      <Header />
-      <Proyects />
-      <Slider />
-      <Footer />
     </>
   );
 }
