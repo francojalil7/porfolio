@@ -17,10 +17,10 @@ import mongo from "../assets/mongo.svg";
 import "../App.css";
 import css from "../assets/css3.svg";
 import bootstrap from "../assets/bootstrap.svg";
-interface skill {
-  name: string;
-  skill: string;
-}
+import { skill } from "../interfaces/skill";
+
+
+
 const skills: skill[] = [
   { name: "TypeScript", skill: typescript },
   { name: "React", skill: react },

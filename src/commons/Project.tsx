@@ -22,8 +22,9 @@ const Project = ({ project }: Prop) => {
       }}
     >
       <Stack m="1rem" direction={{ base: "column-reverse", xl: "row" }}>
-        <Box bg="green" w={{ base: "100%", xl: "50%" }}>
-          Imagen Proyecto
+        <Box bgGradient='linear(to-r, teal.500, green.500)' w={{ base: "100%", xl: "50%" }} className="slider">
+          {project.name}
+          {project.img && <Image src={project.img} />}
         </Box>
         <Stack
           w={{ base: "100%", xl: "50%" }}

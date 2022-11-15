@@ -1,12 +1,6 @@
-import {
-  Box,
-  FormControl,
-  Heading,
-  Input,
-  InputGroup,
-  Stack,
-} from "@chakra-ui/react";
+import { FormControl, Input, InputGroup, Stack } from "@chakra-ui/react";
 import "../App.css";
+
 const Contact = () => {
   return (
     <Stack
