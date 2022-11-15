@@ -1,7 +1,38 @@
-import { FormControl, Input, InputGroup, Stack } from "@chakra-ui/react";
+import { Stack } from "@chakra-ui/react";
+import { useForm, ValidationError } from "@formspree/react";
+import { useEffect, useState } from "react";
 import "../App.css";
 
 const Contact = () => {
+  const [state, handleSubmit] = useForm("xyyvopwr");
+  const [mensaje, setMensaje] = useState("");
+  const [mail, setMail] = useState("");
+  const [nombre, setNombre] = useState("");
+
+  useEffect(() => {
+    if(state.succeeded){
+       setMail("");
+    setNombre("");
+    setMensaje("");
+    }
+   
+  }, [state]);
+
+  if (state.succeeded) {
+  }
+
+  const handlerChange = (event: React.FormEvent<HTMLInputElement>) => {
+    event.currentTarget.name === "name"
+      ? setNombre(event.currentTarget.value)
+      : setMail(event.currentTarget.value);
+  };
+
+  const handlerChangeTextArea = (
+    event: React.FormEvent<HTMLTextAreaElement>
+  ) => {
+    setMensaje(event.currentTarget.value);
+  };
+
   return (
     <Stack
       border={"2px"}
@@ -12,37 +43,45 @@ const Contact = () => {
       w="90%"
       direction={"column"}
     >
-      <p className="contact">Contacto</p>
-      <FormControl display={"flex"} flexDirection="column">
-        <InputGroup>
-          <Input
-            placeholder="Nombre"
-            type="text"
-            borderColor={"white"}
-            border="2px"
-            _focusVisible={{ borderColor: "#20f005" }}
-          />
-        </InputGroup>
-      </FormControl>
-      <FormControl>
-        <Input
-          placeholder="Correo Electrónico"
+      <p className="pForm">Contacto</p>
+      <form onSubmit={handleSubmit} className="contactForm">
+        <label htmlFor="name">Nombre</label>
+        <input
+          className="inputContact"
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Nombre"
+          value={nombre}
+          onChange={handlerChange}
+        />
+        <label htmlFor="email">Correo Electrónico</label>
+        <input
+          className="inputContact"
+          id="email"
           type="email"
-          borderColor={"white"}
-          border="2px"
-          _focusVisible={{ borderColor: "#20f005" }}
+          name="email"
+          placeholder="Correo Electrónico"
+          onChange={handlerChange}
+          value={mail}
         />
-      </FormControl>
-      <FormControl>
-        <Input
-          placeholder="Mensaje"
-          type="textarea"
-          borderColor={"white"}
-          border="2px"
-          _focusVisible={{ borderColor: "#20f005" }}
-          p="5rem"
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Mensaje..."
+          onChange={handlerChangeTextArea}
+          value={mensaje}
         />
-      </FormControl>
+        <ValidationError
+          prefix="Message"
+          field="message"
+          errors={state.errors}
+        />
+        <button type="submit" disabled={state.submitting}>
+          Submit
+        </button>
+      </form>
     </Stack>
   );
 };

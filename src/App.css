@@ -231,6 +231,27 @@
 p {
   color: white;
 }
-.contact {
-  font-size: 2rem;
+
+.contactForm{
+  display: flex;
+  flex-direction: column;
+
+}
+.pForm {
+  font-size: 3rem;
+}
+.contactForm input {
+  background: transparent;
+  padding: 1rem;
+  margin: 1rem;
+  border-bottom: 1px solid white;
+}
+.inputContact:focus {
+  color: blue;
+}
+.contactForm textarea {
+  background: transparent;
+  padding: 1rem;
+  margin: 1rem;
+  border-bottom: 1px solid white;
 }
