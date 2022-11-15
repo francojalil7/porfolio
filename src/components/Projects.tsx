@@ -20,7 +20,7 @@ const Proyects = () => {
           En esta sección encontrarás todos los proyectos en los que trabajé.
         </Text>
         {projects.map((project) => (
-          <Proyect project={project} />
+          <Proyect key={project.name} project={project} />
         ))}
       </>
     </Stack>
