@@ -4,7 +4,7 @@ import projects from "../utils/projects";
 
 const Proyects = () => {
   return (
-    <Stack maxWidth={"1050px"} m="0 auto">
+    <Stack maxWidth={"1050px"} m="0 auto" id="project">
       <>
         <Text
           bgGradient="linear(to-tr, teal.300, yellow.400)"
