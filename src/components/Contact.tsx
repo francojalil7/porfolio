@@ -18,9 +18,6 @@ const Contact = () => {
    
   }, [state]);
 
-  if (state.succeeded) {
-  }
-
   const handlerChange = (event: React.FormEvent<HTMLInputElement>) => {
     event.currentTarget.name === "name"
       ? setNombre(event.currentTarget.value)
@@ -42,6 +39,7 @@ const Contact = () => {
       maxW={"950px"}
       w="90%"
       direction={"column"}
+      id="contact"
     >
       <p className="pForm">Contacto</p>
       <form onSubmit={handleSubmit} className="contactForm">
@@ -78,8 +76,8 @@ const Contact = () => {
           field="message"
           errors={state.errors}
         />
-        <button type="submit" disabled={state.submitting}>
-          Submit
+        <button className="buttonContact" type="submit" disabled={state.submitting}>
+          Enviar
         </button>
       </form>
     </Stack>

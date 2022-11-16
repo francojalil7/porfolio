@@ -34,17 +34,17 @@ const NavBar = () => {
           }}
         >
           <a href="#home">
-            <p>HOME</p>
+            <p>Inicio</p>
           </a>
-          <a href="#skills">HABILIDADES</a>
+          <a href="#skills">Habilidades</a>
           <a href="#about_me">
-            <p> SOBRE MÍ</p>
+            <p> Sobre mí</p>
           </a>
-          <a href="#proyects">
-            <p> PROYECTOS</p>
+          <a href="#project">
+            <p> Proyectos</p>
           </a>
           <a href="#contact">
-            <p> CONTACTOS</p>
+            <p> Contacto</p>
           </a>
         </motion.div>
       )}
