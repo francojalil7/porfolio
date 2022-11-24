@@ -1,6 +1,7 @@
 import broken from "../assets/broken-office.jpeg";
 import bbt from "../assets/bbt1.png";
 import porfolio from "../assets/porfolio.png"
+import tmdb from "../assets/TMDB.png"
 import { Proyecto } from "../interfaces/proyecto";
 
 const projects: Proyecto[] = [
@@ -18,11 +19,11 @@ const projects: Proyecto[] = [
     name: "TMDB",
     description:
       "Consumiento API de peliculas TMDB, donde puedo ver un listado de peliculas y series, un buscador y la posibilidad de agregar a favortios.",
-    img: broken,
+    img: tmdb,
     stack:
       "React | TypeScript | Charka UI | Framer Motion | NodeJS | Express | MongoDB | Mongoose",
     github: "https://github.com/francojalil7/TMDB-Frontend",
-    deploy: "https://tmdb-frontend-mu.vercel.app/",
+    deploy: "https://tmdb-frontend-mu.vercel.app/"
   },
   {
     name: "BBT-Todo",
