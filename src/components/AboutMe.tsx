@@ -40,7 +40,7 @@ const AboutMe = () => {
           p="1rem"
         >
           <a
-            href="https://drive.google.com/file/d/1I80vpy7QR3BA3ab6GdB9-FQzunfwibBV/view?usp=sharing"
+            href="https://drive.google.com/file/d/1G6UlICkYTe11SGoSvFAZWnah7-hWndzm/view"
             target={"_blank"}
           >
             <Button borderRadius={"20px"} m="0">
