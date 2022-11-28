@@ -23,7 +23,7 @@ const projects: Proyecto[] = [
     stack:
       "React | TypeScript | Charka UI | Framer Motion | NodeJS | Express | MongoDB | Mongoose",
     github: "https://github.com/francojalil7/TMDB-Frontend",
-    // deploy: "https://tmdb-frontend-mu.vercel.app/"
+    deploy: "https://tmdb-teal.vercel.app/"
   },
   {
     name: "BBT-Todo",
